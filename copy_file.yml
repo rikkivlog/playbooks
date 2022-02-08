@@ -1,0 +1,10 @@
+---
+- name: my test playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: coping file
+    copy: 
+     src: /home/ansadmin/index.html
+     dest: /home/ansadmin/index.html
+

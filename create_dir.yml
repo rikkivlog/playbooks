@@ -1,0 +1,10 @@
+---
+- name: play book
+  hosts: webservers
+  become: yes
+  tasks: 
+  - name: Creates directory
+    file:
+       path: /home/ansadmin/raj
+       state: directory
+

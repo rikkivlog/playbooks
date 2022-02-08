@@ -1,0 +1,13 @@
+---
+- name: my test playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: create users
+    user: name='{{item}}'     state=present
+    with_items:
+      - rj
+      - sai
+      - sri
+
+

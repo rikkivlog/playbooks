@@ -1,0 +1,9 @@
+---
+- name: play
+  hosts: all
+  become: yes
+  tasks: 
+  - name: create file
+    file:
+       path: /home/ansadmin/demofile
+       state: touch
